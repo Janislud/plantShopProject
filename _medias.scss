@@ -1,0 +1,25 @@
+@media screen and (min-width: 350px) and (max-width: 650px) {
+   .conteiner {
+    .header-green-bar {
+        .shop-notification-wrapper{
+            margin: 10px auto;    
+        }
+        .shop-current-value-wrapper {
+            margin: 10px auto;
+        }
+    }
+
+
+    .main-navigation-wrapper {
+        .main-logo{
+            margin: 10px auto;
+        }
+        .main-navigation {
+            margin: 0px auto;
+            .list-wrapper{
+                gap:20px
+            }
+        }
+    }
+   }
+  }

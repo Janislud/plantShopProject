@@ -96,6 +96,23 @@
   margin: 0px 0px 0px 25px;
 }
 
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .conteiner .header-green-bar .shop-notification-wrapper {
+    margin: 10px auto;
+  }
+  .conteiner .header-green-bar .shop-current-value-wrapper {
+    margin: 10px auto;
+  }
+  .conteiner .main-navigation-wrapper .main-logo {
+    margin: 10px auto;
+  }
+  .conteiner .main-navigation-wrapper .main-navigation {
+    margin: 0px auto;
+  }
+  .conteiner .main-navigation-wrapper .main-navigation .list-wrapper {
+    gap: 20px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
