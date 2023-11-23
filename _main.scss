@@ -1,0 +1,143 @@
+@use 'variables';
+
+.conteiner {
+    .shop-category {
+        border-bottom: 1px solid black;
+        display: variables.$main-display;
+        flex-wrap: variables.$main-wrap;
+        margin-bottom: 52px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 0px;
+        .shop-description {
+            .shop-name {
+                color: variables.$text-color-black;
+                font-family: variables.$font-poppins;
+                font-size: 56px;
+                font-weight: variables.$font-weight-600;
+                line-height: 120%;
+                .shop-color {
+                    color:variables.$main-header-bg-color ;
+                    font-family: variables.$font-poppins;
+                    font-size: 56px;
+                    font-weight: variables.$font-weight-600;
+                    line-height: 120%; 
+                }
+            }
+        }
+
+        .shop-all-wrapper {
+            .shop-all{
+                text-decoration: none;
+                color: variables.$text-color-black;
+                font-family: variables.$font-poppins;
+                font-size: 30px;
+                line-height: 21.7px;
+                text-transform: uppercase;
+            }
+        }
+
+      
+    }
+
+
+
+}
+
+.conteiner-section {
+    .category-wrapper {
+        display: variables.$main-display;
+        flex-wrap: variables.$main-wrap;
+        margin: 0px auto;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 150px;
+        .plants-card-wrapper {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .plants-img {
+                max-width: 180px;
+                margin-bottom: 24px;
+            }
+            .plants-names {
+                align-self: stretch;
+                color: #343434;
+                font-family: variables.$font-open;
+                font-size: 16px;
+                font-weight: variables.$font-weight-700;
+                letter-spacing: 3.2px;
+            }
+        }
+    }
+
+    .selling-wrapper {
+        display: variables.$main-display;
+        flex-wrap: variables.$main-wrap;
+        gap: 24px;
+        border-radius: 16px;
+        justify-content: center;
+        margin-bottom: 126px;
+        
+        .product-card {
+            display: variables.$main-display;
+            flex-direction: column;
+            flex-wrap: variables.$main-wrap;
+            padding: 20px;
+            gap: 16px;
+            background: #FFF;
+            box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+            border-radius: 16px;
+            @include variables.greenButtonBest;
+            .product-card-img{
+               max-width: 328px;
+            }
+          
+           
+        }
+    }
+
+
+ .grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    justify-content: center;
+    padding-bottom: 100px;
+    .card-product {
+        display: variables.$main-display;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        @include variables.greenButtonHottest;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+        max-width: 282px;
+        .card-product-img {
+            max-width: 100%;
+            margin-bottom: 16px;
+            
+        }
+        .grass-description {
+            color: #343434;
+            font-family: variables.$font-open;
+            font-size: 20px;
+            font-weight: variables.$font-weight-700;
+            margin-bottom: 4px;
+        }
+        .grass-price {
+            color: #343434;
+            text-align: center;
+            font-family: variables.$font-open;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+      
+    }
+ }
+}
+

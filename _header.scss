@@ -2,12 +2,13 @@
 
 .conteiner {
     .header-green-bar {
-        display: flex;
-        flex-wrap:variables.$main-wrap;
+        display: variables.$main-display;
+        flex-wrap: variables.$main-wrap;
         background-color: variables.$main-header-bg-color;
 
         .shop-notification-wrapper {
-            margin:10px 0px 13px 473px;
+            margin: 10px 0px 13px 473px;
+
             .shop-notification {
                 max-width: 454px;
                 color: variables.$text-color;
@@ -21,17 +22,18 @@
 
         .shop-current-value-wrapper {
             display: variables.$main-display;
-            flex-wrap:variables.$main-wrap;
+            flex-wrap: variables.$main-wrap;
             gap: 23px;
             margin: 10px 0px 13px 200px;
 
             .currency {
-                max-width:33.976px;
+                max-width: 33.976px;
                 color: variables.$text-color;
                 font-family: variables.$font-open;
                 font-size: 16px;
                 letter-spacing: 0.5px;
             }
+
             .help {
                 max-width: 68px;
                 color: variables.$text-color;
@@ -49,75 +51,151 @@
         padding: 12px 0px 12px 0px;
         background: #FFF;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
 
-        .main-logo{
+        .main-logo {
             margin: 0px 0px 0px 84px;
         }
-        
 
-        .main-navigation{
+
+        .main-navigation {
             display: variables.$main-display;
             flex-wrap: variables.$main-wrap;
             align-items: center;
             margin: 0px 0px 0px 149px;
+  
+            
+
+
 
             .list-wrapper {
                 display: variables.$main-display;
                 flex-wrap: variables.$main-wrap;
                 list-style: none;
                 gap: 70px;
-                
-                li {
-                    padding: 10px;
-                    color: #000;
-                    font-family: variables.$font-open;
-                    font-size: 17px;
-                    letter-spacing: -0.6px;
+
+                        .sites{
+                        padding: 10px;
+                        color: #000;
+                        font-family: variables.$font-open;
+                        font-size: 17px;
+                        letter-spacing: -0.6px;
+                        text-decoration: none;
+                        }
+              
                 }
-            }
+
+                
+        
         }
 
-        .search-fild-wrapper{
+        .search-fild-wrapper {
             display: variables.$main-display;
             flex-wrap: variables.$main-wrap;
             align-items: center;
             margin: 0px 0px 0px 106px;
-            .search-fild{
+
+            .search-fild {
                 border-right: 1px solid black;
                 height: 43px;
-                .search{
+
+                .search {
                     max-width: 57px;
                     color: #979797;
                     font-family: variables.$font-open;
                     font-size: 17px;
                     letter-spacing: -0.6px;
                     border: none;
-                    padding-top: 10px;
+                    margin-top: 10px;
                 }
-                
+
                 .search-icon {
                     max-width: 22px;
                     margin: 0px 25px -6px 0px;
                 }
-            } 
-            
+            }
+
             .backet-fild {
                 display: variables.$main-display;
                 flex-wrap: variables.$main-wrap;
                 align-items: center;
                 gap: 10px;
                 margin: 0px 0px 0px 25px;
-                // color: #000;
-                // color: #000;
-                   // color: #000;
-                // color: #000;
             }
         }
 
-      
+
+    }
+
+    .back-ground {
+        background-image: url('/media/header-media/plant-background.png');
+        background-color: #E8EDDE;
+        display: variables.$main-display;
+        flex-wrap: variables.$main-wrap;
+
+        .plant-shop-advice-wrapper {
+            display: variables.$main-display;
+            flex-direction: column;
+            flex-wrap: variables.$main-wrap;
+            max-width: 594px;
+            margin: 0 auto;
+            background: rgba(80, 128, 107, 0.20);
+            backdrop-filter: blur(20px);
+
+            .advice {
+                color: variables.$text-color-black;
+                text-align: center;
+                font-family: variables.$font-poppins;
+                font-size: 80px;
+                font-weight: variables.$font-weight-600;
+                line-height: 80px;
+                letter-spacing: 2.4px;
+                margin: 157px 26px 0px 26px;
+            }
+
+            .second-advice {
+                color: variables.$text-color-black;
+                text-align: center;
+                font-family: variables.$font-poppins;
+                font-size: 22px;
+                margin: 27px 84px 0px 80px;
+            }
+
+            .planting-button {
+                padding: 24px 56px;
+                display: variables.$main-display;
+                flex-wrap: variables.$main-wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 20px;
+                background: #FFF;
+                max-width: 268px;
+                margin: 60px auto 158px auto;
+                border: none;
+
+                .planting-link {
+                    color: variables.$text-color-black;
+                    text-align: center;
+                    font-family: variables.$font-open;
+                    font-size: 22px;
+                    font-weight: variables.$font-weight-600;
+                    line-height: 22px;
+                    letter-spacing: -0.4px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+    }
+
+    .green-bar {
+        background-color: variables.$main-header-bg-color;
+        padding: 19.5px;
+        margin-bottom: 111px;
     }
 }
-
-
-
-

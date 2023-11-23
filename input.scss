@@ -1,6 +1,8 @@
 @use 'variables';
 @use 'header';
+@use 'main';
 @use 'medias';
+
 
 * {
     margin: 0;
@@ -15,4 +17,20 @@
 .conteiner {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.conteiner-section {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.conteiner-section-tags {
+    max-width: 1228px;
+    margin:0 auto;
+}
+
+.conteiner-green {
+    background-color: #E8EDDE;
+    width: 100%;
+    max-width: 1400px;
 }

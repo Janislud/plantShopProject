@@ -1,25 +1,150 @@
-@media screen and (min-width: 350px) and (max-width: 650px) {
-   .conteiner {
-    .header-green-bar {
-        .shop-notification-wrapper{
-            margin: 10px auto;    
+@use 'variables';
+
+// header
+@media screen and (min-width: variables.$mobile-min-width) and (max-width: variables.$mobile-max-width) {
+    .conteiner {
+        .header-green-bar {
+            .shop-notification-wrapper {
+                margin: 10px auto;
+            }
+
+            .shop-current-value-wrapper {
+                margin: 10px auto;
+            }
         }
-        .shop-current-value-wrapper {
-            margin: 10px auto;
+
+        .main-navigation-wrapper {
+            flex-direction: column;
+
+            .main-logo {
+                margin: 10px auto;
+
+            }
+
+            .main-navigation {
+                margin: 10px auto;
+
+                .list-wrapper {
+                    gap: 5px;
+                    
+
+                    li {
+                        
+                        font-size: 15px;
+                        .sites {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .search-fild-wrapper {
+                margin: 0px auto;
+            }
         }
+
+        .back-ground {
+            .plant-shop-advice-wrapper {
+                
+                .advice {
+                    margin: 157px auto 0px auto;
+                    font-size: 76px;
+                }
+            }
+        }
+
     }
+}
 
 
-    .main-navigation-wrapper {
-        .main-logo{
-            margin: 10px auto;
+@media screen and (min-width:variables.$tabls-min-width) and (max-width:variables.$tabls-max-width) {
+    .conteiner {
+        .header-green-bar {
+            .shop-notification-wrapper {
+                margin: 10px 0px 10px auto;
+            }
+
+            .shop-current-value-wrapper {
+                margin: 10px auto;
+            }
         }
-        .main-navigation {
-            margin: 0px auto;
-            .list-wrapper{
-                gap:20px
+
+
+        .main-navigation-wrapper {
+            .main-logo {
+                margin: 10px auto;
+            }
+
+            .main-navigation {
+                margin: 0px auto;
+
+                .list-wrapper {
+                    gap: 5px;
+                    
+                    
+
+                    li {
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .search-fild-wrapper {
+                margin: 0px auto;
+            }
+
+            .icon {
+      
+                    display: block;
+     
+            }
+        }
+
+
+    }
+}
+
+
+
+
+//MAIN
+@media screen and (min-width: variables.$mobile-min-width) and (max-width: variables.$mobile-max-width) {
+    .conteiner {
+        .shop-category {
+            .shop-description {
+                margin: 0px auto;
             }
         }
     }
-   }
-  }
+
+    .conteiner {
+        .hotes-plans{
+            .grid-conteiner {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:variables.$tabls-min-width) and (max-width:variables.$tabls-max-width) {
+    .conteiner {
+        .shop-category {
+            .shop-description {
+                margin: auto 0px 0px 0px;
+            }
+        }
+
+        
+    }
+
+    .conteiner {
+        .hotes-plans{
+            .grid-conteiner {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+            }
+        }
+    }
+}
