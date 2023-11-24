@@ -309,6 +309,142 @@
   font-size: 20px;
   margin-bottom: 16px;
 }
+.conteiner-section .flex-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 149px;
+}
+.conteiner-section .flex-conteiner .card-product {
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.conteiner-section .flex-conteiner .card-product .product-card-deals-button-description {
+  border-radius: 8px;
+  background: var(--Green, #50806B);
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 8px;
+  border: none;
+  width: 100%;
+}
+.conteiner-section .flex-conteiner .card-product .product-card-deals-button-description .button-buy-description {
+  text-decoration: none;
+  color: #FDFBF7;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.conteiner-section .flex-conteiner .card-product .deals-img {
+  max-width: 242px;
+  margin-bottom: 16px;
+}
+.conteiner-section .flex-conteiner .card-product .grass-description {
+  color: #343434;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.conteiner-section .flex-conteiner .card-product .grass-price {
+  color: #343434;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.conteiner-section .flex-conteiner .card-product .sold-out {
+  color: #D11F1F;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: line-through;
+  margin-left: 7px;
+}
+.conteiner-section .reviews-wrapper .reviews {
+  display: flex;
+  flex-direction: column;
+}
+.conteiner-section .reviews-wrapper .reviews .reviews-text-first {
+  color: #000;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 62px;
+  letter-spacing: -2.4px;
+  margin-bottom: 15px;
+  padding-top: 100px;
+}
+.conteiner-section .reviews-wrapper .reviews .reviews-text-second {
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27.6px;
+  letter-spacing: 0.1px;
+  margin-bottom: 26px;
+}
+.conteiner-section .reviews-wrapper .reviws-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+.conteiner-section .reviews-wrapper .reviws-card .person-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+  max-width: 340px;
+  align-items: center;
+}
+.conteiner-section .reviews-wrapper .reviws-card .person-card .person-img {
+  max-width: 81px;
+  margin: 32px 129px 13px 129px;
+}
+.conteiner-section .reviews-wrapper .reviws-card .person-card .star {
+  max-width: 141px;
+  margin: 0px 99px 21px 99px;
+}
+.conteiner-section .reviews-wrapper .reviws-card .person-card .person-comment {
+  color: #1D293F;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px;
+  max-width: 250px;
+  margin-bottom: 6px;
+}
+.conteiner-section .reviews-wrapper .reviws-card .person-description {
+  max-width: 255px;
+}
+.conteiner-section .reviews-wrapper .reviws-card .person {
+  color: #7C8087;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 13px 28px 15px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 650px) {
   .conteiner .header-green-bar .shop-notification-wrapper {
