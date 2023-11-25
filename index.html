@@ -27,18 +27,31 @@
         </div>
         <div class="main-navigation-wrapper conteiner">
      
-                <img class="main-logo" src="./media/header-media/green-thumb-logo.svg" alt="green-thumb-logo">
-   
-           
-                <nav class="main-navigation">
-                        <ul class="list-wrapper">
-                            <li><a class="sites" href="#">Home</a></li>
-                            <li><a class="sites" href="#">Product</a></li>
-                            <li><a class="sites" href="#">Abouts us</a></li>
-                            <li><a class="sites" href="#">Contact us</a></li>
-                        </ul>
-
-                </nav>
+            <div class="navigation-wrapper-burger">
+                <div class="navigation-logo">
+                    <a href="#">
+                        <img src="./media/header-media/green-thumb-logo.svg" alt="">
+                    </a>
+                </div>
+    
+                <div class="navigation">
+                   
+    
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <input type="checkbox" class="toggle-menu" id="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </label>
+                </div>
+            </div>
+            
       
             <div class="search-fild-wrapper">
                 <div class="search-fild">
@@ -253,6 +266,37 @@
         </div>
     </section>
 </main>
+<footer class="conteiner">
+    <div class="footer-sites">
+        <div class="both-list-wrapper">
+            <div class="first-list-wrapper">
+                <ul class="first-unordered-list">
+                    <li><a class="footer-product" href="#">Products</a></li>
+                    <li><a class="footer-product" href="#">Returns</a></li>
+                    <li><a class="footer-product" href="#">FAQ</a></li>
+                    <li><a class="footer-product" href="#">Shipping</a></li>
+                    <li><a class="footer-product" href="#">About us</a></li>
+                    <li><a class="footer-product" href="#">Contact us</a></li>
+                </ul>
+            </div>
+    
+            <div class="resource-wrapper">
+                <ul class="second-unordered-list">
+                    <li><a class="footer-media-link" href=""><img src="./media/footer-media/youtube.svg" alt="youtube-icon"></a></li>
+                    <li><a class="footer-media-link" href=""><img src="./media/footer-media/facebook.svg" alt="facebook-icon"></a></li>
+                    <li><a class="footer-media-link" href=""><img src="./media/footer-media/twitter.svg" alt="twitter-icon"></a></li>
+                    <li><a class="footer-media-link" href=""><img src="./media/footer-media/instagram.svg" alt="instagram-icon"></a></li>
+                    <li><a class="footer-media-link" href=""><img src="./media/footer-media/linkedin.svg" alt="linkedin-icon"></a></li>
+                </ul>
+            </div>
+    
+            
+        </div>
+        <div class="copy-right ">
+            <p>Copyright Green thumb. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
 </body>
-
+<script src="./script.js"></script>
 </html>

@@ -146,7 +146,7 @@
     flex-wrap: variables.$main-wrap;
     gap: 24px;
     margin-bottom: 149px;
-    
+    justify-content: center;
     .card-product {
         border-radius: 16px;
         background: #FFF;
@@ -195,6 +195,8 @@
     .reviews {
         display: flex;
         flex-direction: column;
+        margin: 0px auto;
+        max-width: 1080px;
         .reviews-text-first {
             color: #000;
             text-align: center;
@@ -225,6 +227,8 @@
             justify-content: center;
             gap: 30px;
             padding-bottom: 60px;
+            max-width: 1080px;
+            margin: 0px auto;
             .person-card {
                 display: flex;
                 flex-wrap: wrap;

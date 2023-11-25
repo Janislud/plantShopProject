@@ -15,14 +15,19 @@
 
         .main-navigation-wrapper {
             flex-direction: column;
-
-            .main-logo {
-                margin: 10px auto;
-
+            .navigation-wrapper-burger {
+                .navigation-logo {
+                        margin: 10px 0px;
+                }
+            }
+            .navigation {
+                margin: 0px 0px;
             }
 
+      
+
             .main-navigation {
-                margin: 10px auto;
+                margin: 10px 0px;
 
                 .list-wrapper {
                     gap: 5px;
@@ -56,6 +61,42 @@
     }
 }
 
+@media screen and (min-width: variables.$mobile-min-width) and (max-width: variables.$mobile-max-width) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+  
+        top: 60px;
+        left: 0;
+        width: 100%;
+
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .toggle-menu:checked + .hamburger .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle-menu:checked + .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-menu:checked + .hamburger .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .toggle-menu:checked + .menu {
+        display: flex;
+    }
+}
+
 
 @media screen and (min-width:variables.$tabls-min-width) and (max-width:variables.$tabls-max-width) {
     .conteiner {
@@ -71,6 +112,23 @@
 
 
         .main-navigation-wrapper {
+            .navigation-wrapper-burger {
+                .navigation-logo {
+                    margin-left: 30px;
+                }
+                .navigation {
+                    margin-left: 50px;
+                    .menu {
+                        display: flex !important;
+                    }
+                    .toggle-menu {
+                        display: none;
+                    }
+                    .hamburger {
+                        display: none;
+                    }
+                }
+            }
             .main-logo {
                 margin: 10px auto;
             }
@@ -78,7 +136,7 @@
             .main-navigation {
                 margin: 0px auto;
 
-                .list-wrapper {
+                .menu {
                     gap: 5px;
                     
                     
@@ -100,10 +158,33 @@
             }
         }
 
+        
+
 
     }
+
+    
+    
+    
 }
 
+@media screen and (min-width:1400px) and (max-width:2900px) {
+    .main-navigation-wrapper {
+        .navigation-wrapper-burger {
+            .navigation {
+                .menu {
+                    display: flex !important;
+                }
+                .toggle-menu {
+                    display: none;
+                }
+                .hamburger {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -113,6 +194,7 @@
         .shop-category {
             .shop-description {
                 margin: 0px auto;
+                text-align: center;
             }
         }
     }
@@ -148,3 +230,4 @@
         }
     }
 }
+

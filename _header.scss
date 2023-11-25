@@ -1,6 +1,7 @@
 @use 'variables';
 
 .conteiner {
+    position: relative;
     .header-green-bar {
         display: variables.$main-display;
         flex-wrap: variables.$main-wrap;
@@ -55,9 +56,76 @@
         z-index: 9999;
         width: 100%;
 
-        .main-logo {
-            margin: 0px 0px 0px 84px;
+ 
+        .navigation-wrapper-burger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // margin: 10px 0px 10px 150px;
+
+            .navigation-logo {
+                margin-left: 80px;
+            }
         }
+
+ 
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            margin: 0px 0px 0px 159px;
+        }
+
+        .toggle-menu {
+            display: none;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bar {
+            width: 30px;
+            height: 4px;
+            background-color: #333;
+        }
+
+        .menu {
+            list-style-type: none;
+            // margin: 9px 0px 9px 149px;
+            display: flex;
+            flex-wrap: wrap;
+            // gap: 77px;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #000;
+            font-family: variables.$font-open;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.6px;
+            padding: 10px;
+        }
+
+
+
+  
 
 
         .main-navigation {
@@ -95,7 +163,7 @@
             display: variables.$main-display;
             flex-wrap: variables.$main-wrap;
             align-items: center;
-            margin: 0px 0px 0px 106px;
+            margin: 0px 0px 0px 233px;
 
             .search-fild {
                 border-right: 1px solid black;
