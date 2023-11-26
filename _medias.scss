@@ -16,9 +16,12 @@
         .main-navigation-wrapper {
             flex-direction: column;
             .navigation-wrapper-burger {
+                flex-flow: column wrap;
                 .navigation-logo {
                         margin: 10px 0px;
                 }
+
+            
             }
             .navigation {
                 margin: 0px 0px;
@@ -43,9 +46,7 @@
                 }
             }
 
-            .search-fild-wrapper {
-                margin: 0px auto;
-            }
+     
         }
 
         .back-ground {
@@ -72,6 +73,13 @@
         top: 60px;
         left: 0;
         width: 100%;
+        justify-content: center;
+
+        li{
+            a{
+                padding: 5px !important;
+            }
+        }
 
     }
 
@@ -95,6 +103,8 @@
     .toggle-menu:checked + .menu {
         display: flex;
     }
+
+   
 }
 
 
@@ -111,16 +121,17 @@
         }
 
 
+
         .main-navigation-wrapper {
             .navigation-wrapper-burger {
+             
                 .navigation-logo {
                     margin-left: 30px;
+                    order: 1;
                 }
                 .navigation {
                     margin-left: 50px;
-                    .menu {
-                        display: flex !important;
-                    }
+                  
                     .toggle-menu {
                         display: none;
                     }
@@ -128,28 +139,18 @@
                         display: none;
                     }
                 }
+                .search-fild-wrapper {
+                    margin: 10px 0px 10px 100px
+                    
+                }
             }
-            .main-logo {
-                margin: 10px auto;
-            }
+          
 
             .main-navigation {
                 margin: 0px auto;
-
-                .menu {
-                    gap: 5px;
-                    
-                    
-
-                    li {
-                        padding: 5px;
-                    }
-                }
             }
 
-            .search-fild-wrapper {
-                margin: 0px auto;
-            }
+      
 
             .icon {
       
@@ -159,6 +160,14 @@
         }
 
         
+
+        .flex-conteiner {
+            .card-product {
+                .grass-description {
+                    font-size: 17px;
+                }
+            }
+        }
 
 
     }
@@ -174,6 +183,7 @@
             .navigation {
                 .menu {
                     display: flex !important;
+                
                 }
                 .toggle-menu {
                     display: none;
@@ -196,6 +206,10 @@
                 margin: 0px auto;
                 text-align: center;
             }
+            .shop-all-wrapper {
+              margin: 10px auto;
+            }
+            
         }
     }
 
@@ -204,6 +218,22 @@
             .grid-conteiner {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+                .card-product {
+                    .grass-description {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.conteiner {
+    .selling-wrapper {
+        .product-card{
+            padding: 10px;
+            .product-card-img {
+                max-width: 300px;
             }
         }
     }
@@ -231,3 +261,54 @@
     }
 }
 
+.conteiner {
+    .reviews-wrapper {
+        .reviews {
+            .reviews-text-first{
+                font-size: 50px;
+            }
+        }
+        .reviws-card {
+            .person-card {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+
+//FOOTER
+
+@media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
+
+}
+
+@media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
+    .menu-container {
+        display: none;
+    }
+}
+
+.menu-container {
+    display: flex;
+    order:2;
+
+    @media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
+            display: none;
+            order: 3;
+        }
+    }
+
+.menu {
+    display: flex !important;
+    gap: 5px;
+    flex-direction: row !important;
+    @media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
+        flex-direction: column !important;
+    }
+    
+    
+    li {
+        padding: 5px;
+    }
+}

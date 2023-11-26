@@ -238,13 +238,14 @@
                 box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
                 max-width:340px ;
                 align-items: center;
+                padding: 22px;
                 .person-img {
                     max-width: 81px;
-                    margin: 32px 129px 13px 129px;
+                    margin: 32px auto 13px auto;
                 }
                 .star {
                    max-width: 141px;
-                   margin: 0px 99px 21px 99px;
+                   margin: 0px auto 21px auto;
                 }
                 .person-comment {
                     color: #1D293F;
@@ -255,7 +256,7 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 28.8px; 
-                    max-width: 250px;
+                    max-width: 257px;
                     margin-bottom: 6px;
                 }
                 }
