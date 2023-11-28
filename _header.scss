@@ -117,7 +117,7 @@
         .navigation {
             display: flex;
             align-items: center;
-            margin: 0px 0px 0px 159px;
+            
             justify-content: center;
         }
 
@@ -146,15 +146,10 @@
 
         .menu {
             list-style-type: none;
-            // margin: 9px 0px 9px 149px;
             display: flex;
             flex-wrap: wrap;
-            // gap: 77px;
         }
 
-        .menu li {
-            margin-right: 20px;
-        }
 
         .menu a {
             text-decoration: none;

@@ -15,43 +15,45 @@
 
         .main-navigation-wrapper {
             flex-direction: column;
+
             .navigation-wrapper-burger {
                 flex-flow: column wrap;
-                .navigation-logo {
-                        margin: 10px 0px;
-                }
 
-            
+                .navigation-logo {
+                    margin: 10px 0px;
+                }
             }
+
             .navigation {
                 margin: 0px 0px;
-            }
+                
 
-      
-
-            .main-navigation {
-                margin: 10px 0px;
-
-                .list-wrapper {
-                    gap: 5px;
-                    
-
-                    li {
-                        
-                        font-size: 15px;
-                        .sites {
-                            font-size: 15px;
-                        }
-                    }
+                .toggle-menu {
+                    display: block;
+                    display: none;
+                }
+            
+                .toggle-menu:checked + .hamburger .bar:nth-child(1) {
+                    transform: rotate(-45deg) translate(-5px, 6px);
+                }
+            
+                .toggle-menu:checked + .hamburger .bar:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .toggle-menu:checked + .hamburger .bar:nth-child(3) {
+                    transform: rotate(45deg) translate(-5px, -6px);
+                }
+            
+                .toggle-menu:checked + .menu {
+                    display: flex;
                 }
             }
-
-     
         }
 
         .back-ground {
             .plant-shop-advice-wrapper {
-                
+
                 .advice {
                     margin: 157px auto 0px auto;
                     font-size: 76px;
@@ -62,54 +64,11 @@
     }
 }
 
-@media screen and (min-width: variables.$mobile-min-width) and (max-width: variables.$mobile-max-width) {
-    .toggle-menu {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-  
-        top: 60px;
-        left: 0;
-        width: 100%;
-        justify-content: center;
-
-        li{
-            a{
-                padding: 5px !important;
-            }
-        }
-
-    }
-
-    .menu li {
-        margin: 0;
-        text-align: center;
-    }
-
-    .toggle-menu:checked + .hamburger .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle-menu:checked + .hamburger .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .toggle-menu:checked + .hamburger .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .toggle-menu:checked + .menu {
-        display: flex;
-    }
-
-   
-}
-
-
 @media screen and (min-width:variables.$tabls-min-width) and (max-width:variables.$tabls-max-width) {
     .conteiner {
+        .main-navigation-wrapper {
+            justify-content: center;
+        }
         .header-green-bar {
             .shop-notification-wrapper {
                 margin: 10px 0px 10px auto;
@@ -120,46 +79,42 @@
             }
         }
 
-
-
         .main-navigation-wrapper {
             .navigation-wrapper-burger {
-             
+
                 .navigation-logo {
-                    margin-left: 30px;
+                    margin-left: 0px;
                     order: 1;
                 }
-                .navigation {
-                    margin-left: 50px;
-                  
-                    .toggle-menu {
-                        display: none;
-                    }
-                    .hamburger {
-                        display: none;
-                    }
-                }
+
+                
+
                 .search-fild-wrapper {
-                    margin: 10px 0px 10px 100px
-                    
+                    margin: 10px 0px 10px 25px;
                 }
             }
-          
 
             .main-navigation {
                 margin: 0px auto;
             }
 
-      
-
             .icon {
-      
-                    display: block;
-     
+
+                display: block;
+
             }
         }
 
-        
+        .navigation {
+            margin-left: 50px;
+            .toggle-menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: none;
+            }
+        }
 
         .flex-conteiner {
             .card-product {
@@ -169,34 +124,9 @@
             }
         }
 
-
-    }
-
-    
-    
-    
-}
-
-@media screen and (min-width:1400px) and (max-width:2900px) {
-    .main-navigation-wrapper {
-        .navigation-wrapper-burger {
-            .navigation {
-                .menu {
-                    display: flex !important;
-                
-                }
-                .toggle-menu {
-                    display: none;
-                }
-                .hamburger {
-                    display: none;
-                }
-            }
-        }
+        
     }
 }
-
-
 
 //MAIN
 @media screen and (min-width: variables.$mobile-min-width) and (max-width: variables.$mobile-max-width) {
@@ -205,19 +135,24 @@
             .shop-description {
                 margin: 0px auto;
                 text-align: center;
+                .shop-name {
+                    margin-bottom: 20px;
+                }
             }
+
             .shop-all-wrapper {
-              margin: 10px auto;
+                margin: 10px auto;
             }
-            
+
         }
     }
 
     .conteiner {
-        .hotes-plans{
+        .hotes-plans {
             .grid-conteiner {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+
                 .card-product {
                     .grass-description {
                         font-size: 17px;
@@ -230,8 +165,9 @@
 
 .conteiner {
     .selling-wrapper {
-        .product-card{
+        .product-card {
             padding: 10px;
+
             .product-card-img {
                 max-width: 300px;
             }
@@ -247,12 +183,10 @@
                 margin: auto 0px 0px 0px;
             }
         }
-
-        
     }
 
     .conteiner {
-        .hotes-plans{
+        .hotes-plans {
             .grid-conteiner {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
@@ -264,10 +198,11 @@
 .conteiner {
     .reviews-wrapper {
         .reviews {
-            .reviews-text-first{
+            .reviews-text-first {
                 font-size: 50px;
             }
         }
+
         .reviws-card {
             .person-card {
                 max-width: 300px;
@@ -276,39 +211,58 @@
     }
 }
 
-
-//FOOTER
-
-@media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
-
-}
-
-@media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
-    .menu-container {
-        display: none;
-    }
-}
-
+// header menu
 .menu-container {
     display: flex;
-    order:2;
-
+    order: 2;
+    margin-left: 159px;
     @media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
-            display: none;
-            order: 3;
-        }
+        display: none;
+        order: 3;
+        margin: 0px 0px 0px 0px;
     }
+    @media screen and (min-width:variables.$tabls-min-width) and (max-width:variables.$tabls-max-width){
+        margin-left: 2px;
+
+        li {
+            a {
+                font-size: 14px !important;
+                padding: 2px !important;
+            }
+        }
+    
+        
+    }
+}
 
 .menu {
     display: flex !important;
     gap: 5px;
     flex-direction: row !important;
+    width: 100%;
+    justify-content: center;
+
+    
+
     @media screen and (min-width:variables.$mobile-min-width) and (max-width:variables.$mobile-max-width) {
         flex-direction: column !important;
     }
-    
-    
+
+  
+
     li {
         padding: 5px;
+        text-align: center;
     }
 }
+
+
+
+
+@media screen and (min-width:1400px) and (max-width:2200px){
+    .navigation {
+        display: none !important;
+    }
+    
+}
+
