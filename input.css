@@ -602,12 +602,15 @@
   .conteiner .hotes-plans .grid-conteiner .card-product .grass-description {
     font-size: 17px;
   }
+  .conteiner .category-wrapper .plants-card-wrapper .plants-img {
+    max-width: 300px;
+  }
 }
 .conteiner .selling-wrapper .product-card {
   padding: 10px;
 }
 .conteiner .selling-wrapper .product-card .product-card-img {
-  max-width: 300px;
+  max-width: 230px;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1400px) {
@@ -618,12 +621,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
   }
+  .conteiner .category-wrapper .plants-card-wrapper .plants-img {
+    max-width: 300px;
+  }
 }
 .conteiner .reviews-wrapper .reviews .reviews-text-first {
   font-size: 50px;
 }
 .conteiner .reviews-wrapper .reviws-card .person-card {
-  max-width: 300px;
+  max-width: 230px;
 }
 
 .menu-container {

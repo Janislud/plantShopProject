@@ -161,6 +161,16 @@
             }
         }
     }
+
+    .conteiner {
+        .category-wrapper {
+            .plants-card-wrapper {
+              .plants-img {
+                max-width: 300px;
+              }  
+            }
+        }
+    }
 }
 
 .conteiner {
@@ -169,10 +179,14 @@
             padding: 10px;
 
             .product-card-img {
-                max-width: 300px;
+                max-width: 230px;
             }
         }
     }
+
+    
+
+
 }
 
 
@@ -193,6 +207,17 @@
             }
         }
     }
+
+
+    .conteiner {
+        .category-wrapper {
+            .plants-card-wrapper {
+              .plants-img {
+                max-width: 300px;
+              }  
+            }
+        }
+    }
 }
 
 .conteiner {
@@ -205,7 +230,7 @@
 
         .reviws-card {
             .person-card {
-                max-width: 300px;
+                max-width: 230px;
             }
         }
     }
